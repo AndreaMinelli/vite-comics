@@ -14,7 +14,7 @@ export default {
   </footer>
 </template>
 
-<style>
+<style scoped>
 footer {
   font-family: "Open Sans Condensed", sans-serif;
 }
