@@ -1,5 +1,9 @@
-<script></script>
+<script>
+export default {};
+</script>
 
 <template></template>
 
-<style></style>
+<style lang="scss">
+@use "../src/assets/scss/style.scss";
+</style>
