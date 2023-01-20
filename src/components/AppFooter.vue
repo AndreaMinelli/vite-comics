@@ -1,22 +1,21 @@
 <script>
 import FooterTop from "./footer-child/FooterTop.vue";
+import FooterBottom from "./footer-child/FooterBottom.vue";
 export default {
   name: "App Footer",
-  components: { FooterTop },
+  components: { FooterTop, FooterBottom },
 };
 </script>
 
 <template>
   <footer>
     <footer-top></footer-top>
+    <footer-bottom></footer-bottom>
   </footer>
 </template>
 
-<style scoped>
+<style>
 footer {
   font-family: "Open Sans Condensed", sans-serif;
-  background-image: url("../assets/img/footer-bg.jpg");
-  background-repeat: no-repeat;
-  /* background-position: center; */
 }
 </style>

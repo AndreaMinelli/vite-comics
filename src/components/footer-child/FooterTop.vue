@@ -56,23 +56,30 @@ export default {
 </script>
 
 <template>
-  <div class="container row">
-    <div class="footer-nav">
-      <div v-for="link in linkList" :key="link.title" class="col">
-        <h4>{{ link.title }}</h4>
-        <ul>
-          <li v-for="subLink in link.links" :key="subLink.text">
-            <a :href="subLink.href"> {{ subLink.text }}</a>
-          </li>
-        </ul>
+  <div class="footer-top">
+    <div class="container row">
+      <div class="footer-nav">
+        <div v-for="link in linkList" :key="link.title" class="col">
+          <h4>{{ link.title }}</h4>
+          <ul>
+            <li v-for="subLink in link.links" :key="subLink.text">
+              <a :href="subLink.href"> {{ subLink.text }}</a>
+            </li>
+          </ul>
+        </div>
       </div>
+      <div class="logo-bg"></div>
     </div>
-    <div class="logo-bg"></div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 @use "../../assets/scss/mixin" as *;
+
+.footer-top {
+  background-image: url("../../assets/img/footer-bg.jpg");
+  background-repeat: no-repeat;
+}
 .row {
   @include flex-disposition("between", "stretch");
 
