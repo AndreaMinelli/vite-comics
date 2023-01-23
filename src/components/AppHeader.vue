@@ -88,6 +88,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "../assets/scss/mixin" as *;
+@use "../assets/scss/variables" as *;
 
 header {
   font-family: "Open Sans Condensed", sans-serif;
@@ -106,8 +107,8 @@ header {
 
       &.active,
       &:hover {
-        border-color: dodgerblue;
-        color: dodgerblue;
+        border-color: $lightblue;
+        color: $lightblue;
       }
     }
   }

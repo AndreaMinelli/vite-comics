@@ -40,6 +40,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "../../assets/scss/mixin" as *;
+@use "../../assets/scss/variables" as *;
 .footer-bottom {
   padding: 15px 0;
   background-color: rgb(48, 48, 48);
@@ -54,7 +55,7 @@ export default {
   p {
     margin: 0 10px;
     font-weight: bolder;
-    color: dodgerblue;
+    color: $lightblue;
     font-size: 15px;
   }
   ul {
@@ -68,7 +69,7 @@ export default {
 
 button {
   background-color: transparent;
-  border: 1px solid dodgerblue;
+  border: 1px solid $lightblue;
   font-weight: bold;
   color: white;
   padding: 8px 15px;

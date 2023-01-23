@@ -42,8 +42,9 @@ export default {
 
 <style lang="scss" scoped>
 @use "../../assets/scss/mixin" as *;
+@use "../../assets/scss/variables" as *;
 .banner {
-  background-color: rgb(2, 130, 249);
+  background-color: $lightblue;
 }
 
 ul {
