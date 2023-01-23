@@ -111,6 +111,9 @@ export default {
           <main-card :comic="comic"></main-card>
         </li>
       </ul>
+      <div class="load-comics">
+        <button>LOAD MORE</button>
+      </div>
     </div>
     <main-banner></main-banner>
   </main>
@@ -145,6 +148,20 @@ h2 {
 
   .comic-card {
     flex-basis: calc(100% / 6);
+  }
+}
+
+.load-comics {
+  margin-bottom: 15px;
+  text-align: center;
+  button {
+    padding: 10px 40px;
+    font-weight: bold;
+    background-color: $lightblue;
+    color: white;
+    border: none;
+    font-size: 10px;
+    cursor: pointer;
   }
 }
 </style>
