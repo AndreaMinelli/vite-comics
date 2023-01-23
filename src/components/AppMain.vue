@@ -103,6 +103,7 @@ export default {
 
 <template>
   <main>
+    <div class="jumbotron"></div>
     <div class="container">
       <ul class="row">
         <li class="comic-card" v-for="comic in comics" :key="comic.series">
@@ -118,6 +119,14 @@ export default {
 main {
   background-color: rgb(28, 28, 28);
   color: white;
+
+  .jumbotron {
+    background-image: url("../assets/img/jumbotron.jpg");
+    height: 300px;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 .row {
   display: flex;
