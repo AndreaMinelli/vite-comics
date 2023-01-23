@@ -105,6 +105,7 @@ export default {
   <main>
     <div class="jumbotron"></div>
     <div class="container">
+      <h2>CURRENT SERIES</h2>
       <ul class="row">
         <li class="comic-card" v-for="comic in comics" :key="comic.series">
           <main-card :comic="comic"></main-card>
@@ -116,6 +117,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../assets/scss/variables" as *;
 main {
   background-color: rgb(28, 28, 28);
   color: white;
@@ -128,10 +130,18 @@ main {
     background-repeat: no-repeat;
   }
 }
+
+h2 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: $lightblue;
+  font-size: 20px;
+  transform: translateY(-50%);
+}
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 0;
+  padding: 0px 10px 20px 10px;
 
   .comic-card {
     flex-basis: calc(100% / 6);

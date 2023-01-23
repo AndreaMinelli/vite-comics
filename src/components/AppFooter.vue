@@ -14,8 +14,9 @@ export default {
   </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use "../assets/scss/variables" as *;
 footer {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: $secondary-font;
 }
 </style>
