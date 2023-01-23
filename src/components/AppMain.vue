@@ -92,11 +92,26 @@ export default {
           type: "graphic novel",
         },
       ],
+      newComics: [],
     };
   },
   components: {
     MainBanner,
     MainCard,
+  },
+  methods: {
+    loadMoreComics() {
+      if (this.newComics.length) {
+        this.newComics.forEach((comic) => {
+          this.comics.push(comic);
+        });
+      } else {
+        this.newComics = [...this.comics];
+        this.newComics.forEach((comic) => {
+          this.comics.push(comic);
+        });
+      }
+    },
   },
 };
 </script>
@@ -112,7 +127,7 @@ export default {
         </li>
       </ul>
       <div class="load-comics">
-        <button>LOAD MORE</button>
+        <button @click="loadMoreComics">LOAD MORE</button>
       </div>
     </div>
     <main-banner></main-banner>
